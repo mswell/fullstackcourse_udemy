@@ -14,7 +14,8 @@ class Blog(object):
     def new_post(self):
         title = input("Enter post title: ")
         content = input("Enter post content: ")
-        date = input("Enter post date, or leave blank for today (in format DDMMYYYY): ")
+        date = input("Enter post date, or leave blank for today \
+                    (in format DDMMYYYY): ")
         if date == "":
             date = datetime.datetime.utcnow()
         else:
